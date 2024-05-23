@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        // Width-based breakpoints (default behavior)
         '2xsm': '300px',
         'xsm': '430px',
         'sm': '675px',
@@ -13,6 +14,14 @@ module.exports = {
         'lg': '1024px',
         'xl': '1325px',
         '2xl': '1600px',
+        // Height-based breakpoints (custom)
+        'h-2xsm': {'raw': '(min-height: 300px)'},
+        'h-xsm': {'raw': '(min-height: 430px)'},
+        'h-sm': {'raw': '(min-height: 675px)'},
+        'h-md': {'raw': '(min-height: 810px)'},
+        'h-lg': {'raw': '(min-height: 1024px)'},
+        'h-xl': {'raw': '(min-height: 1325px)'},
+        'h-2xl': {'raw': '(min-height: 1600px)'},
       },
       fontFamily: {
         'Parisienne': ["Parisienne", "cursive"],

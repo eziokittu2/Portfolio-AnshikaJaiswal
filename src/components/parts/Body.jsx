@@ -13,69 +13,71 @@ import otherData from '../../data/OtherData.json';
 
 const Body = () => {
   return (
-    <div className="relative z-20 flex bg-black bg-opacity-80 text-slate-200 justify-between ">
+    <div className="relative z-20 ">
 
-      {/* content of page */}
-      <div className='w-screen' id={otherData.navbarOptionLinks[0]}>
+      <div className='flex bg-black bg-opacity-80 text-slate-200 justify-between'>
+        {/* content of page */}
+        <div className='w-screen ' id={otherData.navbarOptionLinks[0]}>
 
-        {/* Home Section */}
-        <Element name={otherData.navbarOptionLinks[0]}>
-          <Home />
-          {/* Transperant gradient - change the height and colours acordingly*/}
-          <div className="h-44 w-full bg-gradient-to-b from-transparent to-orange-500/20"></div>
-        </Element>
+          {/* Home Section */}
+          <Element name={otherData.navbarOptionLinks[0]}>
+            <Home />
+            {/* Transperant gradient - change the height and colours acordingly*/}
+            <div className="h-44 w-full bg-gradient-to-b from-transparent to-orange-500/20"></div>
+          </Element>
 
-        {/* About Section */}
-        <Element name={otherData.navbarOptionLinks[1]}>
-          <About />
-          {/* Transperant gradient - change the height and colours acordingly*/}
-          <div className="h-48 w-full bg-gradient-to-b from-orange-500/20 to-purple-500/20"></div>
-        </Element>
+          {/* About Section */}
+          <Element name={otherData.navbarOptionLinks[1]}>
+            <About />
+            {/* Transperant gradient - change the height and colours acordingly*/}
+            <div className="h-48 w-full bg-gradient-to-b from-orange-500/20 to-purple-500/20"></div>
+          </Element>
 
-        {/* Skills Section */}
-        <Element name={otherData.navbarOptionLinks[2]}>
-          <Skills />
-          {/* Transperant gradient - change the height and colours acordingly*/}
-          <div className="h-44 w-full bg-gradient-to-b from-purple-500/20 to-orange-500/20"></div>
-        </Element>
+          {/* Skills Section */}
+          <Element name={otherData.navbarOptionLinks[2]}>
+            <Skills />
+            {/* Transperant gradient - change the height and colours acordingly*/}
+            <div className="h-44 w-full bg-gradient-to-b from-purple-500/20 to-orange-500/20"></div>
+          </Element>
 
-        {/* Works Section */}
-        <Element name={otherData.navbarOptionLinks[3]}>
-          <Works />
-          {/* Transperant gradient - change the height and colours acordingly*/}
-          <div className="h-44 w-full bg-gradient-to-b from-orange-500/20 to-purple-500/20"></div>
-        </Element>
+          {/* Works Section */}
+          <Element name={otherData.navbarOptionLinks[3]}>
+            <Works />
+            {/* Transperant gradient - change the height and colours acordingly*/}
+            <div className="h-44 w-full bg-gradient-to-b from-orange-500/20 to-purple-500/20"></div>
+          </Element>
 
-        {/* Experiences Section */}
-        <Element name={otherData.navbarOptionLinks[4]}>
-          <Experiences />
-          {/* Transperant gradient - change the height and colours acordingly*/}
-          <div className="h-44 w-full bg-gradient-to-b from-purple-500/20 to-orange-500/20"></div>
-        </Element>
+          {/* Experiences Section */}
+          <Element name={otherData.navbarOptionLinks[4]}>
+            <Experiences />
+            {/* Transperant gradient - change the height and colours acordingly*/}
+            <div className="h-44 w-full bg-gradient-to-b from-purple-500/20 to-orange-500/20"></div>
+          </Element>
 
-        {/* Education Section */}
-        <Element name={otherData.navbarOptionLinks[5]}>
-          <Education />
-          {/* Transperant gradient - change the height and colours acordingly*/}
-          <div className="h-44 w-full bg-gradient-to-b from-orange-500/20 to-purple-500/20"></div>
-        </Element>
+          {/* Education Section */}
+          <Element name={otherData.navbarOptionLinks[5]}>
+            <Education />
+            {/* Transperant gradient - change the height and colours acordingly*/}
+            <div className="h-44 w-full bg-gradient-to-b from-orange-500/20 to-purple-500/20"></div>
+          </Element>
 
-        {/* Contact Section */}
-        <Element name={otherData.navbarOptionLinks[6]}>
-          <Contact />
-          {/* Transperant gradient - change the height and colours acordingly*/}
-          <div className="h-44 w-full bg-gradient-to-b from-purple-500/20 to-orange-500/20"></div>
-        </Element>
+          {/* Contact Section */}
+          <Element name={otherData.navbarOptionLinks[6]}>
+            <Contact />
+            {/* Transperant gradient - change the height and colours acordingly*/}
+            <div className="h-44 w-full bg-gradient-to-b from-purple-500/20 to-orange-500/20"></div>
+          </Element>
 
-        {/* Transperant gradient - change the height acordingly*/}
-        {/* <div className="h-44 w-full bg-gradient-to-b from-purple-500/20 via-black/80 to-black"></div> */}
+          {/* Transperant gradient - change the height acordingly*/}
+          {/* <div className="h-44 w-full bg-gradient-to-b from-purple-500/20 via-black/80 to-black"></div> */}
 
-        {/* Contact Me Section */}
+          {/* Contact Me Section */}
 
+        </div>
+
+        {/* a gradiant gap - remember to add this in each page */}
+        {/* <div className="w-full h-24 bg-gradient-to-b from-slate-200/50 to-transparent"></div> */}
       </div>
-
-      {/* a gradiant gap - remember to add this in each page */}
-      {/* <div className="w-full h-24 bg-gradient-to-b from-slate-200/50 to-transparent"></div> */}
 
     </div>
   )

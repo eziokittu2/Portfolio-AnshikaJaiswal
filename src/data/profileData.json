@@ -1,0 +1,20 @@
+{
+  "name": {
+      "firstName":"Anshika",
+      "lastName":"Jaiswal"
+  },
+  "email": "jaiswalanshika071@gmail.com",
+  "email_KIIT": "21052961@kiit.ac.in",
+  "resume": "https://www.youtube.com/",
+  "home": "Varanasi, Uttar Pradesh, PIN-232101",
+  "year": {
+      "$date":"1970-01-01T00:00:00.000+00:00"
+  },
+  "about1":"Hello, I am Anshika Jaiswal currently in 7th Semester (as of ",
+  "about2":"), pursuing my BTech in Computer Science from KIIT University, Bhubaneshwar, Odisha.",
+  "about3": [
+      "I am very cute ",
+      "Again I am very very cute"
+  ],
+  "display_image": "../../../assets/MyImages/Anshika3.png"
+}
