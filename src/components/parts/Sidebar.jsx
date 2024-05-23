@@ -44,7 +44,7 @@ const Sidebar = ({ onParameterChange }) => {
   return (
     <div className={`md:hidden sticky top-20 z-30  transition-all duration-700 ease-in-out opacity-100 bg-purple-900/90 text-white border-b-2 border-orange-500 flex justify-around p-4 ${sidebarButtonClicked ? 'opacity-0' : 'opacity-100'}`}>
       <Fade duration={700} className=''>
-        <div className='grid grid-cols-2 xsm:grid-cols-3 sm:grid-cols-6 gap-x-4 gap-y-4 font-Charm text-xl'>
+        <div className='grid grid-cols-2 xsm:grid-cols-3 sm:grid-cols-6 gap-x-4 gap-y-4 font-AveriaLibre text-xl'>
           {location === '' ? (
             <>
               <NavbarButton myOnClick={() => { scrollToSection(otherData.navbarOptionLinks[0]); handleButtonClick() }} buttonName={otherData.navbarOptions[0]} />

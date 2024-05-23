@@ -8,7 +8,7 @@ module.exports = {
       screens: {
         // Width-based breakpoints (default behavior)
         '2xsm': '300px',
-        'xsm': '430px',
+        // 'xsm': '430px',
         'sm': '675px',
         'md': '810px',
         'lg': '1024px',
@@ -28,6 +28,8 @@ module.exports = {
         'kalam': ['Kalam', 'cursive'],
         'Caveat': ["Caveat", "cursive"],
         'Charm': ["Charm", "cursive"],
+        'Rancho': ["Rancho", "cursive"],
+        'AveriaLibre': ["Averia Libre", "system-ui"],
       },
       keyframes: {
         heartbeat: {

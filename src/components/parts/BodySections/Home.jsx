@@ -26,49 +26,40 @@ const Home = () => {
     >
 
       {/* The welcome text */}
-      <div className='mx-auto'>
+      <div className='justify-center font-AveriaLibre'>
 
         {/* Upper part - 4 texts and image */}
-        {/* <div className='flex flex-row w-fit mx-auto items-center'> */}
-
-        <div className='mx-auto lg:mx-0 w-11/12 sm:w-5/6 lg:w-fit mb-12 lg:mb-0'>
-
-          <Slide direction='down'><Fade>
-            <div className="flex font-Merriweather text-2xl sm:text-4xl md:text-8xl text-fuchsia-500 ">
-              Hey There<span class="text-4xl xsm:text-5xl animate-[wave_1.3s_ease-in-out_infinite]">👋🏻</span>
-            </div>
-          </Fade></Slide>
-        </div>
         <div className='flex flex-row w-fit mx-auto items-center'>
+          
           {/* The display texts */}
           <div className='pr-4 lg:p-0'>
             <Slide direction='down'><Fade>
-              <div className="flex text-2xl xsm:text-3xl sm:text-4xl md:text-8xl text-fuchsia-500 ">
+              <div className="flex text-2xl sm:text-4xl md:text-6xl text-fuchsia-500 ">
                 Hey
               </div>
             </Fade></Slide>
 
             <Slide direction='down'><Fade>
-              <div className="flex text-2xl xsm:text-3xl sm:text-4xl lg:text-5xl text-fuchsia-500 ">
-                There<span class="text-4xl xsm:text-5xl animate-[wave_1.3s_ease-in-out_infinite]">👋🏻</span>
+              <div className="flex text-2xl sm:text-4xl lg:text-5xl text-fuchsia-500 ">
+                There<span class="text-4xl sm:text-4xl md:text-6xl animate-[wave_1.3s_ease-in-out_infinite]">👋🏻</span>
               </div>
             </Fade></Slide>
 
             <Slide direction='down'><Fade>
-              <h1 className='text-fuchsia-300 text-2xl xsm:text-3xl sm:text-4xl'>
+              <h1 className='text-fuchsia-300 text-2xl sm:text-3xl md:text-4xl'>
                 <p>I'm </p>
               </h1>
             </Fade></Slide>
 
             <Slide direction='down'><Fade>
-              <div className="text-4xl xsm:text-5xl sm:text-7xl md:text-7xl lg:text-8xl 
+              <div className="text-4xl sm:text-7xl md:text-8xl lg:text-8xl 
               font-semibold text-fuchsia-500 mt-2">
                 <BubbleText text={profileData.name.firstName} />
               </div>
             </Fade></Slide>
 
             <Slide direction='down'><Fade>
-              <div className="text-4xl xsm:text-5xl sm:text-7xl md:text-7xl lg:text-8xl 
+              <div className="text-4xl sm:text-7xl md:text-8xl lg:text-8xl 
               font-semibold text-fuchsia-500 mt-2">
                 <BubbleText text={profileData.name.lastName} />
               </div>
@@ -76,9 +67,9 @@ const Home = () => {
           </div>
 
           {/* Hero Image */}
-          <div className='lg:hidden'>
+          <div className='lg:hidden  rounded-full border-2 border-purple-500'>
             <img
-              className='max-w-24 2xsm:max-w-30 xsm:max-w-44 sm:max-w-60 rounded-full'
+              className='max-w-24 2xsm:max-w-30 sm:max-w-60 md:w-72 rounded-full shadow-[0_0_50px_purple] hover:shadow-[0_0_80px_purple] transition duration-500'
               src={heroImageSrc}
             />
           </div>
@@ -89,8 +80,8 @@ const Home = () => {
         <Fade
           onVisibilityChange={handleComponentInViewPort}
           delay={500} duration={1500} direction='down'
-          className="p-2 sm:p-4 mt-4 rounded-2xl drop-shadow-xl w-fit mx-auto font-kalam
-          text-xs xsm:text-lg sm:text-xl text-fuchsia-100 bg-fuchsia-950 max-w-[460px] lg:w-[480px]"
+          className="p-2 sm:p-4 mt-4 rounded-2xl drop-shadow-xl w-fit mx-auto font-AveriaLibre
+          text-xs  sm:text-xl text-fuchsia-100 bg-fuchsia-950 max-w-[460px] lg:w-[480px]"
         >
           <TypingComponent texts={heroTextAnimateData.data} speedTyping={60} speedDelete={50} />
         </Fade>
@@ -126,9 +117,9 @@ const Home = () => {
         delay={500}
         duration={1500}
       >
-        <div className='hidden lg:block'>
+        <div className='hidden lg:block rounded-full border-2 border-purple-500'>
           <img
-            className='w-96 rounded-full'
+            className='w-96 rounded-full shadow-[0_0_50px_purple] hover:shadow-[0_0_80px_purple] transition duration-500'
             src={heroImageSrc}
           />
         </div>
