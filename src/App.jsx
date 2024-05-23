@@ -8,7 +8,8 @@ import Footer from './components/parts/Footer';
 
 function App() {
   return (
-    <div className='relative z-10'>
+    // <div className='relative z-10'>
+    <div>
       <BackgroundImage/>
       <BrowserRouter>
         <Navbar />

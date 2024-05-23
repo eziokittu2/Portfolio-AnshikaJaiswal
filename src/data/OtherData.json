@@ -1,0 +1,8 @@
+{
+  "navbarOptions": [
+    "Home", "About Me", "Skills", "Works", "Experience", "Education", "Contact"
+  ],
+  "navbarOptionLinks": [
+    "home", "about", "skills", "works", "experience", "education", "contact"
+  ]
+}
