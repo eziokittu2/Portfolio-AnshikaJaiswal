@@ -10,8 +10,6 @@ import BubbleText from '../../reusable/BubbleText';
 import heroTextAnimateData from "../../../data/homeTextAnimateData.json";
 import profileData from "../../../data/profileData.json";
 
-import heroImageSrc from '../../../assets/MyImages/Anshika4.png';
-
 const Home = () => {
   const [typingComponentInViewPort, setTypingComponentInViewPort] = useState(false) // first time the visibily is false
   const handleComponentInViewPort = () => {
@@ -41,7 +39,7 @@ const Home = () => {
 
             <Slide direction='down'><Fade>
               <div className="flex text-2xl sm:text-4xl lg:text-5xl text-fuchsia-500 ">
-                There<span class="text-4xl sm:text-4xl md:text-6xl animate-[wave_1.3s_ease-in-out_infinite]">👋🏻</span>
+                There<span className="text-4xl sm:text-4xl md:text-6xl animate-[wave_1.3s_ease-in-out_infinite]">👋🏻</span>
               </div>
             </Fade></Slide>
 
@@ -70,7 +68,7 @@ const Home = () => {
           <div className='lg:hidden  rounded-full border-2 border-purple-500'>
             <img
               className='max-w-24 2xsm:max-w-30 sm:max-w-60 md:w-72 rounded-full shadow-[0_0_50px_purple] hover:shadow-[0_0_80px_purple] transition duration-500'
-              src={heroImageSrc}
+              src={profileData.display_image}
             />
           </div>
 
@@ -80,7 +78,7 @@ const Home = () => {
         <Fade
           onVisibilityChange={handleComponentInViewPort}
           delay={500} duration={1500} direction='down'
-          className="p-2 sm:p-4 mt-4 rounded-2xl drop-shadow-xl w-fit mx-auto font-AveriaLibre
+          className="p-2 sm:p-4 mt-4 rounded-2xl drop-shadow-xl w-fit mx-auto font-kalam
           text-xs  sm:text-xl text-fuchsia-100 bg-fuchsia-950 max-w-[460px] lg:w-[480px]"
         >
           <TypingComponent texts={heroTextAnimateData.data} speedTyping={60} speedDelete={50} />
@@ -103,7 +101,7 @@ const Home = () => {
                 className='font-normal group-hover:font-bold transition-all duration-300'
               >About Me</p>
               <svg className='w-6 h-6 ml-2 fill-slate-400 group-hover:fill-white group-hover:translate-x-2 transition-transform duration-300'
-                xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd">
                 <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z" />
               </svg>
             </button>
@@ -120,7 +118,7 @@ const Home = () => {
         <div className='hidden lg:block rounded-full border-2 border-purple-500'>
           <img
             className='w-96 rounded-full shadow-[0_0_50px_purple] hover:shadow-[0_0_80px_purple] transition duration-500'
-            src={heroImageSrc}
+            src={profileData.display_image}
           />
         </div>
       </Fade>

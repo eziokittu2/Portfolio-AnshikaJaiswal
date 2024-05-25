@@ -3,7 +3,7 @@ import { scroller } from 'react-scroll';
 import { Fade } from "react-awesome-reveal";
 import { useLocation, useNavigate } from 'react-router-dom';
 import NavbarButton from '../reusable/NavbarButton';
-import otherData from '../../data/OtherData.json';
+import otherData from '../../data/otherData.json';
 
 const Sidebar = ({ onParameterChange }) => {
   const [sidebarButtonClicked, setSidebarbuttonClicked] = useState(false);

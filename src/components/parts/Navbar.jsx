@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import NavbarButton from '../reusable/NavbarButton';
 import Sidebar from './Sidebar';
 
-import otherData from '../../data/OtherData.json';
+import otherData from '../../data/otherData.json';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +51,7 @@ const Navbar = () => {
           <div className='flex flex-row h-fit my-auto ml-2 text-2xl 2xsm:text-3xl sm:text-4xl font-bold'>
             <button
               onClick={() => { scrollToSection(otherData.navbarOptionLinks[0]) }}
-              className="px-[10px] py-[6px] font-Parisienne font-bold bg-clip-text text-transparent bg-gradient-to-br from-orange-100 via-orange-400 to-orange-600 flex items-center border-y-2 border-orange-500 rounded-2xl shadow-[0_0_50px_purple] ">
+              className="px-[10px] py-[6px] font-Parisienne font-bold bg-clip-text text-transparent bg-gradient-to-br from-orange-100 via-orange-400 to-orange-600 flex items-center border-b-4 border-t-2 border-orange-500 rounded-2xl shadow-[0_0_30px_purple] hover:shadow-[0_0_50px_purple] hover:shadow-pink-800">
               Anshika Jaiswal
             </button>
 

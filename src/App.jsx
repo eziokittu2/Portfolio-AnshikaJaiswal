@@ -10,7 +10,7 @@ function App() {
   return (
     // <div className='relative z-10'>
     <div>
-      <BackgroundImage/>
+      <BackgroundImage pauseTime={1000}/>
       <BrowserRouter>
         <Navbar />
         <Routes>

@@ -4,12 +4,24 @@ const About = () => {
   return (
     <div className='bg-orange-500/20 '>
       <div
-        className='mx-2 sm:mx-auto p-2 sm:p-4
-        w-fit sm:w-11/12 lg:w-3/4 xl:w-3/5 2xl:w-1/2
+        className='mx-2 sm:mx-auto p-2 sm:p-4 
+        sm:w-[655px] md:w-[790px] lg:w-[1004px]
         bg-orange-500/10 hover:bg-orange-900 rounded-lg group/about
         shadow-[0_0_5px_black] hover:shadow-[0_0_15px_black] transition duration-500'
       >
-        About
+        {/* All the content */}
+        <div className='flex flex-col text-justify'>
+
+          {/* Heading */}
+          <div className='text-center'>About Me</div>
+
+          {/* Body */}
+          <div></div>
+
+          {/* Footer */}
+          <div></div>
+
+        </div>
       </div>
     </div>
   )

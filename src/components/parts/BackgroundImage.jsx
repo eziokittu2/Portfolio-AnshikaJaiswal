@@ -1,15 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import myImage1 from '../../assets/MyImages/Anshika1.png';
-import myImage2 from '../../assets/MyImages/Anshika2.png';
-import myImage3 from '../../assets/MyImages/Anshika3.png';
-import myImage4 from '../../assets/MyImages/Anshika4.png';
-import myImage5 from '../../assets/MyImages/Anshika5.png';
-import myImage6 from '../../assets/MyImages/Anshika6.png';
-import myImage7 from '../../assets/MyImages/Anshika7.png';
+import BackgroundImagesData from '../../data/backgroundImageData.json';
 
-const images = [myImage1, myImage2, myImage3, myImage4, myImage5, myImage6, myImage7, myImage1, myImage2, myImage3, myImage4, myImage5, myImage6, myImage7];
-
-const BackgroundImages = () => {
+const BackgroundImages = ({pauseTime}) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -34,7 +26,7 @@ const BackgroundImages = () => {
       }, 4000); // The duration here should match the transition duration
     };
 
-    const intervalId = setInterval(animate, 400); // Adjust this interval to control the frequency of image shifts
+    const intervalId = setInterval(animate, pauseTime); // Adjust this interval to control the frequency of image shifts
 
     return () => clearInterval(intervalId);
   }, []);
@@ -42,7 +34,7 @@ const BackgroundImages = () => {
   return (
     <div className="fixed top-0 left-0 w-full h-full overflow-hidden z-0 bg-black">
       <div className="scrolling-images flex" ref={containerRef}>
-        {images.map((image, index) => (
+        {BackgroundImagesData.backgroundImages.map((image, index) => (
           <img src={image} alt={`Image ${index + 1}`} key={index} className="w-auto h-full" />
         ))}
       </div>

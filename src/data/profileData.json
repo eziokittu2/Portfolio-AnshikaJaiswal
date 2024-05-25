@@ -3,7 +3,7 @@
       "firstName":"Anshika",
       "lastName":"Jaiswal"
   },
-  "email": "jaiswalanshika071@gmail.com",
+  "email_gmail": "jaiswalanshika071@gmail.com",
   "email_KIIT": "21052961@kiit.ac.in",
   "resume": "https://www.youtube.com/",
   "home": "Varanasi, Uttar Pradesh, PIN-232101",
@@ -16,5 +16,5 @@
       "I am very cute ",
       "Again I am very very cute"
   ],
-  "display_image": "../../../assets/MyImages/Anshika3.png"
+  "display_image": "./Images/MyImages/Anshika4.png"
 }

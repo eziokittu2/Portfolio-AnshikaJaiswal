@@ -9,7 +9,7 @@ import Experiences from './BodySections/Experiences';
 import Education from './BodySections/Education';
 import Contact from './BodySections/Contact';
 
-import otherData from '../../data/OtherData.json';
+import otherData from '../../data/otherData.json';
 
 const Body = () => {
   return (
@@ -17,7 +17,7 @@ const Body = () => {
 
       <div className='flex bg-black bg-opacity-80 text-slate-200 justify-between'>
         {/* content of page */}
-        <div className='w-screen ' id={otherData.navbarOptionLinks[0]}>
+        <div className='w-screen' id={otherData.navbarOptionLinks[0]}>
 
           {/* Home Section */}
           <Element name={otherData.navbarOptionLinks[0]}>
@@ -69,7 +69,7 @@ const Body = () => {
           </Element>
 
           {/* Transperant gradient - change the height acordingly*/}
-          {/* <div className="h-44 w-full bg-gradient-to-b from-purple-500/20 via-black/80 to-black"></div> */}
+          <div className="h-32 w-full bg-gradient-to-b from-orange-500/20 via-orange-700/20 to-orange-950"></div>
 
           {/* Contact Me Section */}
 
