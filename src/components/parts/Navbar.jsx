@@ -44,13 +44,13 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-30 flex bg-purple-900  h-20 text-slate-200 justify-between border-b-2 border-orange-500 text-xl font-AveriaLibre shadow-[0_0_50px_purple]">
+      <div className="sticky top-0 z-30 flex bg-purple-900  h-20 text-slate-200 justify-between border-b-2 border-orange-500 text-xl font-AveriaLibre">
         <div className=" flex flex-row justify-between mx-auto w-[1014px] ">
 
           {/* Left part */}
           <div className='flex flex-row h-fit my-auto ml-2 text-2xl 2xsm:text-3xl sm:text-4xl font-bold'>
             <button
-              onClick={() => { scrollToSection(otherData.navbarOptionLinks[0]) }}
+              onClick={() => { goToHomeAndScroll(otherData.navbarOptionLinks[0]) }}
               className="px-[10px] py-[6px] font-Parisienne font-bold bg-clip-text text-transparent bg-gradient-to-br from-orange-100 via-orange-400 to-orange-600 flex items-center border-b-4 border-t-2 border-orange-500 rounded-2xl shadow-[0_0_30px_purple] hover:shadow-[0_0_50px_purple] hover:shadow-pink-800">
               Anshika Jaiswal
             </button>
@@ -124,8 +124,10 @@ const Navbar = () => {
           </div>
 
         </div>
-
       </div>
+
+      {/* Transperant gradient - change the height acordingly*/}
+      <div className="fixed top-20 z-30 h-32 w-full bg-gradient-to-b from-purple-950 via-purple-900/60 to-transparent pointer-events-none"></div>
       {isOpen && (<Sidebar onParameterChange={onSidebarButtonClick} />)}
     </>
   )

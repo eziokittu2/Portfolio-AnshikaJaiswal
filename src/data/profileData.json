@@ -5,7 +5,7 @@
   },
   "email_gmail": "jaiswalanshika071@gmail.com",
   "email_KIIT": "21052961@kiit.ac.in",
-  "resume": "https://www.youtube.com/",
+  "resume": "/error",
   "home": "Varanasi, Uttar Pradesh, PIN-232101",
   "year": {
       "$date":"1970-01-01T00:00:00.000+00:00"
@@ -16,5 +16,16 @@
       "I am very cute ",
       "Again I am very very cute"
   ],
-  "display_image": "./Images/MyImages/Anshika4.png"
+  "display_image": "./Images/MyImages/Anshika4.png",
+  "links": [
+    {"link_instagram": ""},
+    {"link_facebook": ""},
+    {"link_linkedin": ""},
+    {"link_spotify": ""},
+    {"link_twitter": ""},
+    {"link_github": ""},
+    {"link_leetcode": ""},
+    {"link_codeforces": ""},
+    {"link_": ""}
+  ]
 }

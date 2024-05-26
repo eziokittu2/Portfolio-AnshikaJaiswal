@@ -9,7 +9,7 @@ const Works = () => {
         bg-orange-500/10 hover:bg-orange-900 rounded-lg group/about
         shadow-[0_0_5px_black] hover:shadow-[0_0_15px_black] transition duration-500'
       >
-        Works
+        Works (section coming soon...)
       </div>
     </div>
   )

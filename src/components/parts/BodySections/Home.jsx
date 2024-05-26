@@ -11,20 +11,18 @@ import heroTextAnimateData from "../../../data/homeTextAnimateData.json";
 import profileData from "../../../data/profileData.json";
 
 const Home = () => {
-  const [typingComponentInViewPort, setTypingComponentInViewPort] = useState(false) // first time the visibily is false
+  const [typingComponentInViewPort, setTypingComponentInViewPort] = useState(false)
   const handleComponentInViewPort = () => {
     setTypingComponentInViewPort(!typingComponentInViewPort);
-    // console.log(`Component is ${typingComponentInViewPort===true ? 'entering' : 'exiting'} the viewport`);
   }
 
   return (
-    // <div className='min-h-screen bg-black bg-opacity-80'>Home section</div>
     <div
-      className="lg:w-[1014px] pt-4 lg:flex items-center justify-around mx-auto mb-8 "
+      className="lg:w-[1014px] pt-4 lg:flex items-center justify-around mx-auto mb-8 mt-24 md:mt-12"
     >
 
       {/* The welcome text */}
-      <div className='justify-center font-AveriaLibre'>
+      <div className='justify-center font-AveriaLibre '>
 
         {/* Upper part - 4 texts and image */}
         <div className='flex flex-row w-fit mx-auto items-center'>

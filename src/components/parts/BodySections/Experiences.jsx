@@ -9,7 +9,7 @@ const Experiences = () => {
         bg-purple-500/10 hover:bg-purple-900 rounded-lg group/about
         shadow-[0_0_5px_black] hover:shadow-[0_0_15px_black] transition duration-500'
       >
-        My Experiences
+        My Experiences (section coming soon...)
       </div>
     </div>
   )
