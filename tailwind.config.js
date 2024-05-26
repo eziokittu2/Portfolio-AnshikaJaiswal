@@ -30,6 +30,7 @@ module.exports = {
         'Charm': ["Charm", "cursive"],
         'Rancho': ["Rancho", "cursive"],
         'AveriaLibre': ["Averia Libre", "system-ui"],
+        'Roboto': ["Roboto", "sans-serif"],
       },
       keyframes: {
         heartbeat: {
